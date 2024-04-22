@@ -1,3 +1,19 @@
+
+```{=html}
+<style>
+  body{text-align: justify}
+</style>
+```
+
+
 # Prefácio {.unnumbered}
 
+O coeficiente Kappa, simbolizado pela letra grega minúscula κ e criado pelo estatístico Jacob Cohen (1960), mede a concordância entre dois avaliadores, cada um classificando N itens em C categorias mutuamente exclusivas.
 
+O Kappa de Cohen é o mais usado e avalia a concordância entre dois examinadores (ou dois métodos). Por outro lado, Fleiss (1981) propôs uma extensão do Kappa para o caso em que há mais de dois examinadores (ou métodos), que foi denominada Kappa Generalizado ou Kappa de Fleiss.
+
+
+Outra extensão do Kappa com grande aplicabilidade é o Kappa Ponderado, que visa distinguir as discordâncias/concordâncias atribuindo pesos diferentes para cada tipo (por exemplo, em leves, moderadas e graves).
+
+
+Nesse contexto, será apresentado o teste kappa na linguagem de programação R.

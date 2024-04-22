@@ -1,24 +1,45 @@
+# Preâmbulo Geral
 project:
   type: book
   output-dir: docs
 
 book:
-  title: "Teste Não-paramétrico de Kappa"
-  author: "Mário Diego"
-  date: "22/04/2024"
+  title: "**Teste Não-Paramétrico Kappa**"
+  reader-mode: true
+  subtitle: "**Exemplos no R**"
+  date: "29/02/2024"
+  author:
+  - name: "**Mário Diego Rocha Valente**"
+    orcid: 0000-0001-7262-3336
+    corresponding: true
+
+  page-footer:
+    left: |
+      Copyright: FAPESPA - 2024
+    right: |
+      Construído <a href="https://quarto.org/">Pacote Quarto no R4.3</a>.
+  cover-image: kappa1.jpg
+  favicon: kappa1.jpg
+  repo-url : https://github.com/MarioDhiego/Estatistica_Municipal_Fapespa_Belem
+  repo-branch: main
+  repo-actions: [edit, issue]
+  downloads: [pdf, docx]
+  sharing: [twitter, facebook]
+  page-navigation: true
   chapters:
     - index.qmd
     - intro.qmd
     - summary.qmd
     - references.qmd
-
+comments:
+  hypothesis: true
 bibliography: references.bib
-
 format:
   html:
-    theme: cosmo
-  pdf:
-    documentclass: scrreprt
-
-editor: visual
+    theme:
+      light: [blue,custom.scss]
+      dark:  [cyborg,custom.scss]
+    code-link: true
+    toc-title: Índice
+    toc-location: right
 

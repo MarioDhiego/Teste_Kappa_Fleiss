@@ -1,0 +1,346 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrreprt}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{5}
+% Make \paragraph and \subparagraph free-standing
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[many]{tcolorbox}}
+\makeatother
+\makeatletter
+\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Teste Não-Paramétrico Kappa},
+  pdfauthor={Mário Diego Rocha Valente},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{\textbf{Teste Não-Paramétrico Kappa}}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{\textbf{Exemplos no R}}
+\author{\textbf{Mário Diego Rocha Valente}}
+\date{5/2/26}
+
+\begin{document}
+\maketitle
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[interior hidden, sharp corners, borderline west={3pt}{0pt}{shadecolor}, boxrule=0pt, enhanced, breakable, frame hidden]}{\end{tcolorbox}}\fi
+
+\renewcommand*\contentsname{Table of contents}
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\bookmarksetup{startatroot}
+
+\hypertarget{prefuxe1cio}{%
+\chapter*{Prefácio}\label{prefuxe1cio}}
+\addcontentsline{toc}{chapter}{Prefácio}
+
+\markboth{Prefácio}{Prefácio}
+
+O coeficiente Kappa, simbolizado pela letra grega minúscula κ e criado
+pelo estatístico Jacob Cohen (1960), mede a concordância entre dois
+avaliadores, cada um classificando N itens em C categorias mutuamente
+exclusivas.
+
+O Kappa de Cohen é o mais usado e avalia a concordância entre dois
+examinadores (ou dois métodos). Por outro lado, Fleiss (1981) propôs uma
+extensão do Kappa para o caso em que há mais de dois examinadores (ou
+métodos), que foi denominada Kappa Generalizado ou Kappa de Fleiss.
+
+Outra extensão do Kappa com grande aplicabilidade é o Kappa Ponderado,
+que visa distinguir as discordâncias/concordâncias atribuindo pesos
+diferentes para cada tipo (por exemplo, em leves, moderadas e graves).
+
+\bookmarksetup{startatroot}
+
+\hypertarget{teste-nuxe3o-paramuxe9trico-de-kappa}{%
+\chapter{Teste Não-Paramétrico de
+Kappa}\label{teste-nuxe3o-paramuxe9trico-de-kappa}}
+
+\hypertarget{coeficiente-kappa-de-cohen}{%
+\section{coeficiente kappa de Cohen}\label{coeficiente-kappa-de-cohen}}
+
+O coeficiente kappa de Cohen (\(κ\)) é uma estatística que é usada para
+medir a confiabilidade interexaminador (e também a confiabilidade
+intraexaminador) para itens qualitativos (categóricos). Geralmente é
+considerada uma medida mais robusta do que o simples cálculo percentual
+de concordância, pois \(κ\) leva em consideração a possibilidade de a
+concordância ocorrer por acaso. Há controvérsia em torno do kappa de
+Cohen devido à dificuldade em interpretar os índices de concordância.
+Alguns pesquisadores sugeriram que é conceitualmente mais simples
+avaliar a discordância entre os itens.
+
+O artigo seminal introduzindo o kappa como uma nova técnica foi
+publicado por \textbf{Jacob Cohen} na revista Educational and
+Psychological Measurement em 1960.
+
+Jacob Cohen (20 de abril de 1923 - 20 de janeiro de 1998) foi um
+psicólogo e estatístico norte-americano mais conhecido por seu trabalho
+sobre potência estatística e tamanho do efeito, que ajudou a estabelecer
+as bases para a meta-análise estatística atual e os métodos da
+estimativa estatística. Ele deu seu nome a medidas como kappa de Cohen,
+d de Cohen e h de Cohen.
+
+O kappa de Cohen mede a concordância entre dois avaliadores que
+classificam N itens em C categorias mutuamente exclusivas. A definição
+de \emph{kappa} é:
+
+\[ \kappa = \frac{p_{0}-p_{1}}{1-p_{e}} = 1- \frac{1-p_{0}}{1-p_{e}}\]
+
+Onde:
+
+\begin{itemize}
+\tightlist
+\item
+  \(p_{0}:\) é a concordância relativa observada entre os avaliadores
+\item
+  \(p_{e}:\) é a probabilidade hipotética de concordância ao acaso,
+  usando os dados observados para calcular as probabilidades de cada
+  observador ver aleatoriamente cada categoria.
+\item
+  Se os avaliadores estiverem de acordo, então \(\kappa = 1\).
+\item
+  Se não houver acordo entre os avaliadores além do que seria esperado
+  por acaso (conforme dado por \(p_{e}\)), então \(\kappa = 0\).
+\end{itemize}
+
+É possível que a estatística seja negativa, o que pode ocorrer por acaso
+se não houver relação entre as avaliações dos dois avaliadores, ou pode
+refletir uma tendência real dos avaliadores em dar avaliações
+diferentes.
+
+A estatística pode variar de -1 a +1, onde o valor negativo indica que a
+concordância entre os avaliadores foi menor que a concordância esperada
+ao acaso. Com -1 estamos indicando que não houve concordância, 0 indica
+que a concordância não é melhor que o acaso, e valores maiores que 0
+representam uma concordância crescente para os avaliadores, até um valor
+máximo de + 1, indicando uma concordância perfeita.
+
+\hypertarget{coeficiente-kappa-fleiss}{%
+\section{Coeficiente kappa Fleiss}\label{coeficiente-kappa-fleiss}}
+
+O Kappa de Cohen é o mais usado e avalia a concordância entre dois
+examinadores (ou dois métodos). Por outro lado, Fleiss (1981) propôs uma
+extensão do Kappa para o caso em que há mais de dois examinadores (ou
+métodos), que foi denominada Kappa Generalizado ou Kappa de Fleiss.
+
+O Kappa de Fleiss é um teste estatístico não-paramétrico, utilizado para
+avaliar o grau de concordância entre 3 ou + observadores, avaliadores
+e/ou juízes.
+
+Joseph L. Fleiss (13 de novembro de 1937 - 12 de junho de 2003) foi um
+professor americano de bioestatística na Escola Mailman de Saúde Pública
+da Universidade de Columbia , onde também atuou como chefe da Divisão de
+Bioestatística de 1975 a 1992. Ele é conhecido. por seu trabalho em
+estatísticas de saúde mental , particularmente avaliando a
+confiabilidade das classificações diagnósticas e as medidas, modelos e
+controle de erros na categorização.
+
+Fleiss (1981) oferece uma classificação Kappa que pode nos ajudar a
+interpretar os coeficientes obtidos:
+
+\begin{itemize}
+\tightlist
+\item
+  Entre 0,40 e 0,60: concordância Regular
+\item
+  Entre 0,61 e 0,75: concordância Boa 8 Acima de 0,75: concordância
+  Excelente
+\end{itemize}
+
+Altman (1991) propõe uma classificação um tanto mais ampla:
+
+\begin{itemize}
+\tightlist
+\item
+  De 0 a 0,20: concordância muito fraca
+\item
+  De 0,21 a 0,40: concordância fraca
+\item
+  De 0,41 a 0,60: concordância moderada
+\item
+  De 0.61 a 0,80: concordância boa
+\item
+  De 0.81 a 1,00: concordância muito boa
+\end{itemize}
+
+A função R \textbf{kappam.fleiss()} do \textbf{pacote irr} pode ser
+usada para calcular Fleiss kappa como um índice de concordância entre
+avaliadores entre m avaliadores em dados categóricos.
+
+\bookmarksetup{startatroot}
+
+\hypertarget{summary}{%
+\chapter{Summary}\label{summary}}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{referuxeancias}{%
+\chapter*{Referências}\label{referuxeancias}}
+\addcontentsline{toc}{chapter}{Referências}
+
+\markboth{Referências}{Referências}
+
+COHEN J. A (1960). Coefficient of agreement for nominal scales. Journal
+of Educational and Measurement, v.20, n.1, p.37-46.
+
+FLEISS, J.L. (1981). Statistical methods for rates and proportions. New
+York: John Wiley and Sons.
+
+ALTMAN, D.G. (1991). Practical statistics for medical research. New
+York: Chapman and Hall.
+
+Conover, W. J. Practical nonparametric statistics. 2a. ed.~New York:
+John Wiley \& Sons, 1999.
+
+Lehmann, E.L.; D'Abrera, H.J.M. Nonparametrics: Statistical Methods
+Based on Ranks. Holden-Daym, California, 1975. p.~264.
+
+Siegel, S., Castellan, Jr., N. J., Estatística não-paramétrica para
+ciências do comportamento. São Paulo: Bookman (Artmed), 2006.
+
+Agresti, A -- An Introduction to Categorical Data Analysis (Wiley Series
+in Probability and Statistics) -- 2ª edição. New York, USA: Wiley, 2007.
+
+Triola, M. F. Introdução à estatística. Rio de Janeiro: Livros Técnicos
+e Científicos, 2013.
+
+
+
+\end{document}

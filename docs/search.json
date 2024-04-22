@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Teste Não-paramétrico de Kappa",
+    "title": "Teste Não-Paramétrico Kappa",
     "section": "",
-    "text": "Prefácio"
+    "text": "Prefácio\nO coeficiente Kappa, simbolizado pela letra grega minúscula κ e criado pelo estatístico Jacob Cohen (1960), mede a concordância entre dois avaliadores, cada um classificando N itens em C categorias mutuamente exclusivas.\nO Kappa de Cohen é o mais usado e avalia a concordância entre dois examinadores (ou dois métodos). Por outro lado, Fleiss (1981) propôs uma extensão do Kappa para o caso em que há mais de dois examinadores (ou métodos), que foi denominada Kappa Generalizado ou Kappa de Fleiss.\nOutra extensão do Kappa com grande aplicabilidade é o Kappa Ponderado, que visa distinguir as discordâncias/concordâncias atribuindo pesos diferentes para cada tipo (por exemplo, em leves, moderadas e graves).\nNesse contexto, será apresentado o teste kappa na linguagem de programação R."
   },
   {
     "objectID": "intro.html#coeficiente-kappa-de-cohen",
