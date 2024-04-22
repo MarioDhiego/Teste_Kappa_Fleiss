@@ -1,0 +1,17 @@
+# Referências {.unnumbered}
+
+COHEN J. A (1960). Coefficient of agreement for nominal scales. Journal of Educational and Measurement, v.20, n.1, p.37-46.
+
+FLEISS, J.L. (1981). Statistical methods for rates and proportions. New York: John Wiley and Sons.
+
+ALTMAN, D.G. (1991). Practical statistics for medical research. New York: Chapman and Hall.
+
+Conover, W. J. Practical nonparametric statistics. 2a. ed. New York: John Wiley & Sons, 1999.
+
+Lehmann, E.L.; D'Abrera, H.J.M. Nonparametrics: Statistical Methods Based on Ranks. Holden-Daym, California, 1975. p. 264.
+
+Siegel, S., Castellan, Jr., N. J., Estatística não-paramétrica para ciências do comportamento. São Paulo: Bookman (Artmed), 2006.
+
+Agresti, A -- An Introduction to Categorical Data Analysis (Wiley Series in Probability and Statistics) -- 2ª edição. New York, USA: Wiley, 2007.
+
+Triola, M. F. Introdução à estatística. Rio de Janeiro: Livros Técnicos e Científicos, 2013.

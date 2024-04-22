@@ -1,0 +1,82 @@
+
+
+```{=html}
+<style>
+  body{text-align: justify}
+</style>
+```
+
+
+::: progress
+::: {.progress-bar style="width: 100%;"}
+:::
+:::
+
+
+# Teste Não-Paramétrico de Kappa
+## coeficiente kappa de Cohen
+
+
+O coeficiente kappa de Cohen ($κ$) é uma estatística que é usada para medir a confiabilidade interexaminador (e também a confiabilidade intraexaminador) para itens qualitativos (categóricos). Geralmente é considerada uma medida mais robusta do que o simples cálculo percentual de concordância, pois $κ$ leva em consideração a possibilidade de a concordância ocorrer por acaso. Há controvérsia em torno do kappa de Cohen devido à dificuldade em interpretar os índices de concordância. Alguns pesquisadores sugeriram que é conceitualmente mais simples avaliar a discordância entre os itens.
+
+O artigo seminal introduzindo o kappa como uma nova técnica foi publicado por **Jacob Cohen** na revista Educational and Psychological Measurement em 1960. 
+
+Jacob Cohen (20 de abril de 1923 - 20 de janeiro de 1998) foi um psicólogo e estatístico norte-americano mais conhecido por seu trabalho sobre potência estatística e tamanho do efeito, que ajudou a estabelecer as bases para a meta-análise estatística atual e os métodos da estimativa estatística. Ele deu seu nome a medidas como kappa de Cohen, d de Cohen e h de Cohen.
+
+
+O kappa de Cohen mede a concordância entre dois avaliadores que classificam N itens em C categorias mutuamente exclusivas. A definição de *kappa* é:
+
+$$ \kappa = \frac{p_{0}-p_{1}}{1-p_{e}} = 1- \frac{1-p_{0}}{1-p_{e}}$$
+
+Onde:
+
+* $p_{0}:$ é a concordância relativa observada entre os avaliadores
+* $p_{e}:$  é a probabilidade hipotética de concordância ao acaso, usando os dados observados para calcular as probabilidades de cada observador ver aleatoriamente cada categoria.
+* Se os avaliadores estiverem de acordo, então $\kappa = 1$. 
+* Se não houver acordo entre os avaliadores além do que seria esperado por acaso (conforme dado por $p_{e}$), então $\kappa = 0$.
+
+É possível que a estatística seja negativa, o que pode ocorrer por acaso se não houver relação entre as avaliações dos dois avaliadores, ou pode refletir uma tendência real dos avaliadores em dar avaliações diferentes.
+
+A estatística pode variar de -1 a +1, onde o valor negativo indica que a concordância entre os avaliadores foi menor que a concordância esperada ao acaso. Com -1 estamos indicando que não houve concordância, 0 indica que a concordância não é melhor que o acaso, e valores maiores que 0 representam uma concordância crescente para os avaliadores, até um valor máximo de + 1, indicando uma concordância perfeita.
+
+
+
+::: progress
+::: {.progress-bar style="width: 100%;"}
+:::
+:::
+
+## Coeficiente kappa Fleiss
+
+
+O Kappa de Cohen é o mais usado e avalia a concordância entre dois examinadores (ou dois métodos). Por outro lado, Fleiss (1981) propôs uma extensão do Kappa para o caso em que há mais de dois examinadores (ou métodos), que foi denominada Kappa Generalizado ou Kappa de Fleiss.
+
+O Kappa de Fleiss é um teste estatístico não-paramétrico, utilizado para avaliar o grau de concordância entre 3 ou + observadores, avaliadores e/ou juízes.
+
+Joseph L. Fleiss (13 de novembro de 1937 - 12 de junho de 2003) foi um professor americano de bioestatística na Escola Mailman de Saúde Pública da Universidade de Columbia , onde também atuou como chefe da Divisão de Bioestatística de 1975 a 1992. Ele é conhecido. por seu trabalho em estatísticas de saúde mental , particularmente avaliando a confiabilidade das classificações diagnósticas e as medidas, modelos e controle de erros na categorização.
+
+
+Fleiss (1981) oferece uma classificação Kappa que pode nos ajudar a interpretar os coeficientes obtidos:
+
+* Entre 0,40 e 0,60: concordância Regular
+* Entre 0,61 e 0,75: concordância Boa
+8 Acima de 0,75: concordância Excelente
+
+
+Altman (1991) propõe uma classificação um tanto mais ampla:
+
+* De 0 a 0,20: concordância muito fraca
+* De 0,21 a 0,40: concordância fraca
+* De 0,41 a 0,60: concordância moderada
+* De 0.61 a 0,80: concordância boa
+* De 0.81 a 1,00: concordância muito boa
+
+
+A função R **kappam.fleiss()** do **pacote irr** pode ser usada para calcular Fleiss kappa como um índice de concordância entre avaliadores entre m avaliadores em dados categóricos.
+
+
+
+::: progress
+::: {.progress-bar style="width: 100%;"}
+:::
+:::
