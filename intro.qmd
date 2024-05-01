@@ -14,7 +14,7 @@
 
 
 # Teste Não-Paramétrico de Kappa
-## coeficiente kappa de Cohen
+## Coeficiente kappa de Cohen
 
 
 O coeficiente kappa de Cohen ($κ$) é uma estatística que é usada para medir a confiabilidade interexaminador (e também a confiabilidade intraexaminador) para itens qualitativos (categóricos). Geralmente é considerada uma medida mais robusta do que o simples cálculo percentual de concordância, pois $κ$ leva em consideração a possibilidade de a concordância ocorrer por acaso. Há controvérsia em torno do kappa de Cohen devido à dificuldade em interpretar os índices de concordância. Alguns pesquisadores sugeriram que é conceitualmente mais simples avaliar a discordância entre os itens.
@@ -71,8 +71,6 @@ Altman (1991) propõe uma classificação um tanto mais ampla:
 * De 0.61 a 0,80: concordância boa
 * De 0.81 a 1,00: concordância muito boa
 
-
-A função R **kappam.fleiss()** do **pacote irr** pode ser usada para calcular Fleiss kappa como um índice de concordância entre avaliadores entre m avaliadores em dados categóricos.
 
 
 

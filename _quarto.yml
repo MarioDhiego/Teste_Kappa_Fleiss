@@ -15,7 +15,7 @@ book:
 
   page-footer:
     left: |
-      Copyright: FAPESPA - 2024
+      Copyright: (VALENTE et. al, 2024)
     right: |
       Construído <a href="https://quarto.org/">Pacote Quarto no R4.3</a>.
   cover-image: kappa1.jpg

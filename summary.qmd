@@ -1,2 +1,73 @@
-# Summary
+
+```{=html}
+<style>
+  body{text-align: justify}
+</style>
+```
+
+
+# Aplicações no R
+## Base de Dados
+
+```{r Banco1, message=FALSE, warning=FALSE}
+
+library(readxl)
+Banco_Priscila <- read_excel("Banco_Priscila.xlsx")
+
+head(Banco_Priscila[, 2:4])
+```
+
+
+## Coeficiente de Kappa Fleiss
+
+A função **kappam.fleiss()** do **pacote irr** pode ser usada para calcular a estatística do Teste de kappa Fleiss como um índice de confiabilidade entre m avaliadores em dados categóricos.
+
+
+```{r kappa1, message=FALSE, warning=FALSE}
+library(irr)
+library(psy)
+
+kappam.fleiss(Banco_Priscila[,2:4],
+              detail = TRUE)
+```
+
+
+## IC 95\%
+
+
+```{r IC1, eval=FALSE, include=FALSE}
+library(DescTools)
+  
+KappaM(Banco_Priscila[2:4], 
+       method = "Fleiss", 
+       conf.level = 0.95)
+```
+
+
+
+## Cálculo da Concordância (\%)
+
+```{r concord1, message=FALSE, warning=FALSE}
+
+agree(Banco_Priscila[2:4],
+      tolerance = 0)
+```
+
+
+
+
+
+## Interpretação
+
+O Teste de Kappa de Fleiss mostrou que há uma Confiabilidade Regular entre os 3 juízes (**k=0.45[0.42;0.64], Z = 7.74, P-valor < 0.001**). A concordância entre os três observadores foi de **60.4\%**
+
+
+
+
+
+::: progress
+::: {.progress-bar style="width: 100%;"}
+:::
+:::
+
 
